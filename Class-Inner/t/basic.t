@@ -43,6 +43,8 @@ is($ic->poly(), 'b',      '$ic->poly is b');
 
 # Check that destruction works.
 
-$ic = undef;
-
-ok(!$ic_class->isa('Parent'), 'Class dismissed');
+undef $ic;
+{
+    no strict 'refs';
+    is_deeply(\%{"${ic_class}::"}, {}, 'Class dismissed');
+}
