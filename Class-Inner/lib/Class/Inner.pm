@@ -149,10 +149,7 @@ symbol table.
 sub clean_symbol_table {
     my $class = shift;
     no strict 'refs';
-    foreach my $symbol (keys %{"$class\::"}) {
-	delete ${"$class\::"}{$symbol};
-    }
-    delete $::{"$class\::"};	
+    undef %{"${class}::"};	
 }
 
 =item B<new_classname>
