@@ -2,8 +2,7 @@ package Class::Inner;
 
 use vars qw/$VERSION/;
 
-$VERSION = 0.1;
-
+$VERSION = 0.200_001;
 
 use strict;
 use Carp;
@@ -173,6 +172,8 @@ __END__
 =back
 
 =head1 AUTHOR
+
+Maintained by Arun Prasaad  C<< <arunbear@cpan.org> >>
 
 Copyright (c) 2001 by Piers Cawley E<lt>pdcawley@iterative-software.comE<gt>.
 
