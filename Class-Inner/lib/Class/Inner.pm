@@ -162,7 +162,7 @@ Returns a name for the next anonymous class.
     my $class_counter;
 
     sub new_classname {
-	my $baseclass = ref($_[0]) || $_[0];
+	my $baseclass = shift;
 	return "$baseclass\::__A" . $class_counter++;
     }
 }
