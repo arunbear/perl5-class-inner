@@ -1,5 +1,5 @@
 Changes
-Inner.pm
+lib/Class/Inner.pm
 MANIFEST
 README
 Makefile.PL
